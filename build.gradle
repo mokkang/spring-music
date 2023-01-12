@@ -4,8 +4,14 @@ plugins {
     id 'java'
     id 'eclipse-wtp'
     id 'idea'
-}
+    id "com.srcclr.gradle" version "3.1.12"
 
+}
+apply plugin: "srcclr"
+srcclr {
+apiToken = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzU1NDU0LCJleHAiOjE2NzM1NjUzMjAsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiIxNjAxYzJhZC03OGI5LTQ3OGItOTIyOC00MDgwMmVlNDFmYmYiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.mNJxgtlriUCIgUumvi1djKJvLqUOxjkywAhctSjG4CeCKeBwNcaN43MfFN-XR7cTO08iLkm_nXZFIpVGQ_whTI9rkvAKf4N9ubNiyuxXW9lcUfY12drkc-r7yR3vfkh7SNWnj9N1JratALPB7FA3vIaFxWNUwxkcOdjpbQOM_YM"
+
+}
 repositories {
     mavenCentral()
 }
